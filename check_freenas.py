@@ -91,7 +91,7 @@ class Startup(object):
         crit=0
         msg=''
         try:
-            for alert in alerts:
+            for alert in alerts['objects']:
               if alert['dismissed'] == 'false':
                 if alert['level'] == 'CRIT':
                     crit = crit + 1
